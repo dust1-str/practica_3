@@ -58,13 +58,13 @@
 .izquierdo {
     display: flex;
     flex-direction: column;
-    padding: 3em 3em;
+    padding: 3em 3.4em;
     align-items: center;
 }
 
 .izquierdo p {
     font-family: 'Roboto';
-    font-size: 1.8em;
+    font-size: 1.9em;
     margin-bottom: 1em;
     line-height: 1.5em;
     font-weight: 500;
@@ -146,18 +146,21 @@ button {
 }
 
 .sign {
-    margin-top: 3.2em;
+    margin-top: 3.3em;
+    padding-left: 5em;
 }
 
 .sign p:first-child {
-    font-size: 1.8em;
+    font-size: 2em;
     font-family: 'Roboto';
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .sign p:last-child {
     font-family: 'Roboto';
-    font-weight: 500;
+    font-weight: 300;
+    margin-top: 0.2em;
+    font-size: 1.7em;
 }
 
 .datos {
@@ -187,10 +190,11 @@ button {
 
 .i-am select, .birthday select {
     margin-left: 0.5em;
+    height: 2em;
 }
 
 .birthday {
-    margin-right: 38px;
+    margin-right: 16px;
 }
 
 .message {
@@ -204,8 +208,18 @@ button {
 
 .sign-up button {
     padding: 0 5px;
-    background-color: #2ac22a;
+    background-color: #3bd33b;
     color: white;
+}
+
+.sign-up button:hover {
+    background: #168b16;
+    color: #fff !important;
+}
+
+.header button:hover {
+    background: #193e8d;
+    color: #fff !important;
 }
 
 .first-name p:first-child, .last-name p:first-child, .your-email p:first-child, .new-pass p:first-child, .i-am p:first-child, .birthday p:first-child {
@@ -214,7 +228,17 @@ button {
     font-weight: 300;
 }
 
-.message a {
+.message a, .link a {
     text-decoration: none;
     font-size: 0.9em;
+}
+
+.link {
+    margin-top: 2em;
+    margin-right: 1em;
+}
+
+.link a {
+    font-size: 1em;
+    font-weight: bold;
 }
