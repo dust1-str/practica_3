@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +7,78 @@
 }
 
 .contenedor {
-    background-color: aquamarine;
+    background-color: white;
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 10vh 90vh;
+    grid-template-rows: 15vh 85vh;
 }
 
-.contenedor .header {
-    background-color: red;
+.header {
+    background-color: #3b5998;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+}
+
+.header p {
+    font-size: 3em;
+    color: white;
+    font-weight: 900;
+    margin-left: 1em;
+    font-family: 'Ruda';
+}
+
+.izquierdo {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 3em;
+    align-items: center;
+}
+
+.izquierdo p {
+    font-family: 'Ruda';
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.izquierdo img {
+    width: 500px;
+    height: auto;
+}
+
+.password p {
+    text-align: end;
+    font-size: 0.73em;
+    font-weight: 100;
+    margin-right: 1em;
+}
+
+.sesion {
+    display: flex;
+    padding-right: 3em;
+}
+
+.correo, .password {
+    display: flex;
+    flex-direction: column;
+}
+
+.correo input:last-child, .password input{
+    height: 2em;
+    margin-right: 1em;
+    margin-top: 0.3em;
+}
+
+button {
+    height: 2em;
+}
+
+.izquierdo {
+    background-color: green;
 }
