@@ -18,38 +18,48 @@
     background-color: #3b5998;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 0.5em;
 }
 
 .content {
     display: grid;
-    grid-template-columns: 60vw 40vw;
+    grid-template-columns: 55vw 45vw;
 }
 
-.header p {
+.header p, h1 {
     font-size: 3em;
     color: white;
     font-weight: 900;
-    margin-left: 1em;
+    margin-right: 1em;
     font-family: 'Ruda';
+}
+
+.header h1 {
+    margin-left: 1em;
 }
 
 .izquierdo {
     display: flex;
     flex-direction: column;
-    padding: 4em 3em;
+    padding: 3em 3em;
     align-items: center;
 }
 
 .izquierdo p {
     font-family: 'Ruda';
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 1em;
+    line-height: 1.5em;
 }
 
 .izquierdo img {
-    width: 500px;
+    width: 720px;
     height: auto;
+}
+
+.derecho {
+    background-color: red;
 }
 
 .password p {
@@ -73,6 +83,8 @@
     height: 2em;
     margin-right: 1em;
     margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    padding: 4px;
 }
 
 button {
@@ -80,5 +92,19 @@ button {
 }
 
 .izquierdo {
-    background-color: green;
+    background-color: white;
+}
+
+.sesion button {
+    align-self: flex-end;
+    margin-bottom: 0.5em;
+}
+
+.correo-dos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.correo-dos p {
+    font-size: 0.73em;
 }
